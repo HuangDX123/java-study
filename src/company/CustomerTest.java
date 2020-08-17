@@ -1,4 +1,4 @@
-package com.company;
+package company;
 
 /*
  *类中方法的声明和使用
@@ -9,7 +9,7 @@ package com.company;
  *      Arrays类：sort()\binarySearch() \ tostring() \ equals()...
  *
  *1.举例：
- * public void eat(){}
+ * public void eat(){}∂
  * public void sleep(int hour){}
  * public String getName(){}
  *public String getNation(String nation){}
@@ -29,17 +29,41 @@ package com.company;
  *                      使用return，但是，如果使用的话，只能"return；"标示结束此方法的意思。
  *              3.2.2 我们定义的方法该不该有返回值？
  *                    1 题目要求
- *                    2
-
- * return关键字的使用。
+ *                    2 凭经验：具体问题具体分析
+ *            3.3 方法名：属于标识符，遵循标识符的规则和规范，"见名知意"
+ *            3.4 形参列表：方法可以声明0个，1个，或者多个型参
+ *            3.5 方法体：方法功能的体现。
+ *
+ * 4.    return关键字的使用。
+ *         1.使用范围，使用在方法体中
+ *         2.作用： 1 结束方法
+ *                   2 针对于有返回值类型的方法，使用"return" 数据"方法返回所要的数据"。
+ *         3.注意点： return关键字后面不可以声明执行语句。
+ *
+ * 5.     方法的使用中，可以调用当前类的属性、或者调用当前类的方法
+ *                  特殊的：方法A中调用了方法A
  *
  *
 
  */
-class CustomerTest {
+public class CustomerTest {
+	public static void main(String[] args) {
+
+		Customer cust1 = new Customer();
+
+		cust1.eat();
+
+//		测试形参时候需要设置
+//		int[] arr = new int[]{3,4,5,2,5,63,5,5};
+//		cust1.sort();
+
+		cust1.sleep(8);
+
+	}
 
 }
 
+//客户类
 class Customer {
 
 	//    属性
@@ -55,11 +79,20 @@ class Customer {
 	}
 
 	public void sleep(int hour) {
+
 		System.out.println("休息了" + hour + "个小时");
+
+		eat();
 	}
 
 	public String getName() {
-		return name;
+
+		if(age > 18){
+			return name;
+		}else{
+			return "Tom";
+		}
+
 	}
 
 	public String getNation(String nation) {
@@ -67,5 +100,16 @@ class Customer {
 		return info;
 
 	}
+
+//	体会形参是否需要设置
+//	public void sort(int[] arr){
+//
+//	}
+//public void sort(){
+//	int[] arr = new int[]{3,4,5,2,5,63,5,5};
+//	//	。。。。
+//
+//}
+
 
 }

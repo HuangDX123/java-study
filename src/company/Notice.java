@@ -1,4 +1,4 @@
-package com.company;
+package company;
 
 public class Notice {
 	public static void main(String[] args) {
@@ -8,5 +8,7 @@ public class Notice {
 //		我演示一遍
 
 //		111
+
+//		这样子就可以了
 	}
 }

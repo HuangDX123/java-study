@@ -1,4 +1,4 @@
-package com.company;
+package company;
 
 public class Person implements PersonInterface {
 	public int abcd;

@@ -1,4 +1,4 @@
-package com.company;
+package company;
 /*
   1用二分查找算法在给定数组中搜索给定值的对象(Byte,Int,double等)。数组在调用前必须排序好的。如果查找值包含在数组中，则返回搜索键的索引；否则返回 (-(插入点) - 1)。
    2	public static boolean equals(long[] a, long[] a2)

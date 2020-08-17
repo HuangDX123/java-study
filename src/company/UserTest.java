@@ -1,4 +1,4 @@
-package com.company;
+package company;
 
 //	类中属性的使用
 //

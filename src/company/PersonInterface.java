@@ -1,4 +1,4 @@
-package com.company;
+package company;
 
 public interface PersonInterface {
 	void eat(String what);
