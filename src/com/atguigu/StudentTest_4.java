@@ -30,7 +30,7 @@ public class StudentTest_4 {
 			stus[i] = new Student();
 			//给Student对象的属性赋值
 			stus[i].number = (i + 1);
-			//年纪：【1，6】
+			//年级：【1，6】
 			stus[i].state = (int) (Math.random() * (6 - 1 + 1) + 1);
 			//成绩： 【0，100】
 			stus[i].score = (int) (Math.random() * (100 - 0 + 1));
