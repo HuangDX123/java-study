@@ -109,6 +109,8 @@ class Studen_5Test {
 					stus[j] = stus[j + 1];
 					stus[j + 1] = temp;
 
+
+
 				}
 
 			}
