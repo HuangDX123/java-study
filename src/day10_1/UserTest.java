@@ -20,6 +20,7 @@ public class UserTest {
 		User u1 =new User(2);
 		System.out.println(u1.age);
 	}
+
 }
 
 
