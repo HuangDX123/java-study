@@ -11,18 +11,16 @@ package day12;
  */
 
 
-
-
-
+import day12_1.Student;
 
 public class PersonTest {
 
     public static void main(String[] args) {
 
 
-        Student s = new Student();
+        day12_1.Student s = new Student();
         s.eat();
-        s.walk(10);
+//        s.walk(10);
 
 
         s.study();
