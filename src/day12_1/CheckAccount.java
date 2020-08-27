@@ -25,6 +25,7 @@ public class CheckAccount extends Account {
         return overdraft;
     }
 
+
     public void setOverdraft(double overdraft) {
         this.overdraft = overdraft;
     }
