@@ -18,6 +18,20 @@ package day15;
         如果实现类覆盖了接口中的所有抽象方法 则此实现类就可以实例化
         如果实现类没有覆盖接口中的所有抽象方法 则此实现类仍然为一个抽象类
 
+    6. Java类可以实现多个接口 ————>弥补了Java单继承的局限性
+    格式 class AA extends BB implements CC,DD,EE
+
+    7. 接口与接口之间可以继承 而且可以多继承
+
+
+      继承是一个"是不是"的关系，而接口实现则是 "能不能" 的关系。
+
+      接口的本质是契约，标准，规范，就像我们的法律一样。制定好后大家都 要遵守。
+
+
+      8 接口的具体使用、体现多态性
+      9. 接口、实际上可以看做是一种规范
+
 
  */
 public class InterfaceTest {
@@ -60,7 +74,7 @@ class Plane implements Flyable{
     }
 }
 
-class Kite implements Flyable{
+abstract class Kite implements Flyable{
 
     @Override
     public void fly() {
@@ -72,3 +86,21 @@ class Kite implements Flyable{
 
     }
 }
+
+class Bullet extends Object implements Flyable{
+
+
+
+    @Override
+    public void fly() {
+
+    }
+
+    @Override
+    public void stop() {
+
+    }
+}
+//********************************************************
+
+
