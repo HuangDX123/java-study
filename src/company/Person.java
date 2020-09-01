@@ -2,8 +2,8 @@ package company;
 
 public class Person implements PersonInterface {
 	public int abcd;
-	protected int abc;
-	private String name;
+    public String name;
+    protected int abc;
 	private int age;
 	private String nickname;
 	private int cdb;
